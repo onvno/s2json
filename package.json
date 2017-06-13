@@ -1,6 +1,6 @@
 {
   "name": "summary-convert-json",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "markdown summary convert to json",
   "main": "index.js",
   "bin": {
@@ -8,7 +8,8 @@
   },
   "dependencies": {
     "fs-extra": "^3.0.1",
-    "glob": "^7.1.2"
+    "glob": "^7.1.2",
+    "yargs": "^8.0.2"
   },
   "devDependencies": {},
   "scripts": {

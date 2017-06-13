@@ -4,12 +4,27 @@ const fs = require('fs');
 const fse = require('fs-extra');
 const glob = require('glob');
 const path = require('path');
+const argv = require('yargs')
+  .option('out', {
+    alias: 'O',
+    describe: '输出路径,默认"out"',
+  })
+  .option('entry', {
+    alias: 'E',
+    describe: '输入路径,默认"demo"',
+  })
+  .option('base', {
+    alias: 'B',
+    describe: '基本相对路径,默认运行命令当前路径"./"',
+  }).help().argv;
+
+console.log(argv);
 
 // 配置文件
 const SET = {
-  BASE: './', // 根目录
-  ENTRY: 'demo', // 入口目录
-  OUT: 'out', // 输出目录
+  BASE: argv.base || './', // 根目录
+  ENTRY: argv.entry || 'demo', // 入口目录
+  OUT: argv.out || 'out', // 输出目录
 }
 
 // const pattern = path.join(__dirname,SET.DEMO,'**/SUMMARY.md')
