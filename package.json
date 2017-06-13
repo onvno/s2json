@@ -4,7 +4,7 @@
   "description": "markdown summary convert to json",
   "main": "index.js",
   "bin": {
-    "2json": "index.js"
+    "s2json": "index.js"
   },
   "dependencies": {
     "fs-extra": "^3.0.1",

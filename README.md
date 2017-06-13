@@ -1,4 +1,4 @@
-# summary-convert-json
+# s2json
 markdown summary convert to json
 
 Convert `SUMMARY.md` convert to JSON file :
@@ -8,7 +8,7 @@ Convert `SUMMARY.md` convert to JSON file :
 
 # USE
 ```
-npm install 2json
+npm install s2json
 
 cd my-project-file
 
