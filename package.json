@@ -1,6 +1,6 @@
 {
-  "name": "summary-convert-json",
-  "version": "0.1.0",
+  "name": "s2json",
+  "version": "0.1.1",
   "description": "markdown summary convert to json",
   "main": "index.js",
   "bin": {
