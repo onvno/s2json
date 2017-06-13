@@ -1,6 +1,6 @@
 {
   "name": "s2json",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "markdown summary convert to json",
   "main": "index.js",
   "bin": {

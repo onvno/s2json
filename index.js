@@ -18,7 +18,7 @@ const argv = require('yargs')
     describe: '基本相对路径,默认运行命令当前路径"./"',
   }).help().argv;
 
-console.log(argv);
+// console.log(argv);
 
 // 配置文件
 const SET = {
