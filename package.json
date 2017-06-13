@@ -1,0 +1,25 @@
+{
+  "name": "summary-convert-json",
+  "version": "1.0.0",
+  "description": "markdown summary convert to json",
+  "main": "index.js",
+  "dependencies": {
+    "fs-extra": "^3.0.1",
+    "glob": "^7.1.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/onvno/summary-convert-json.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/onvno/summary-convert-json/issues"
+  },
+  "homepage": "https://github.com/onvno/summary-convert-json#readme"
+}
