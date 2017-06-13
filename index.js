@@ -1,3 +1,5 @@
+#!/usr/bin/env node --harmony
+
 const fs = require('fs');
 const fse = require('fs-extra');
 const glob = require('glob');
@@ -5,11 +7,13 @@ const path = require('path');
 
 // 配置文件
 const SET = {
+  BASE: './', // 根目录
+  ENTRY: 'demo', // 入口目录
   OUT: 'out', // 输出目录
-  DEMO: 'demo', // demo目录
 }
 
-const pattern = path.join(__dirname,SET.DEMO,'**/SUMMARY.md')
+// const pattern = path.join(__dirname,SET.DEMO,'**/SUMMARY.md')
+const pattern = path.join(process.cwd(), SET.BASE, SET.ENTRY,'**/SUMMARY.md')
 const enters = glob.sync(pattern);
 
 function matchLine(str){
@@ -56,7 +60,7 @@ enters.forEach(function(item,index){
     }
   });
   const objStr = JSON.stringify(obj,null, 4);
-  const outPath = item.replace(SET.DEMO,SET.OUT).replace('.md','.json');
+  const outPath = item.replace(SET.ENTRY,SET.OUT).replace('.md','.json');
   fse.ensureFileSync(outPath);
   fse.writeFileSync(outPath,objStr,'utf-8');
 })
