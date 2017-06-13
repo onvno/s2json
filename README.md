@@ -8,7 +8,7 @@ Convert `SUMMARY.md` convert to JSON file :
 
 # USE
 ```
-npm install summary-convert-json
+npm install 2json
 
 cd my-project-file
 
