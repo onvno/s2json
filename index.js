@@ -7,11 +7,11 @@ const path = require('path');
 const argv = require('yargs')
   .option('out', {
     alias: 'O',
-    describe: '输出路径,默认"out"',
+    describe: '输出路径,默认"md-build"',
   })
   .option('entry', {
     alias: 'E',
-    describe: '输入路径,默认"demo"',
+    describe: '输入路径,默认"md"',
   })
   .option('base', {
     alias: 'B',
@@ -23,8 +23,8 @@ const argv = require('yargs')
 // 配置文件
 const SET = {
   BASE: argv.base || './', // 根目录
-  ENTRY: argv.entry || 'demo', // 入口目录
-  OUT: argv.out || 'out', // 输出目录
+  ENTRY: argv.entry || 'md', // 入口目录
+  OUT: argv.out || 'md-build', // 输出目录
 }
 
 // const pattern = path.join(__dirname,SET.DEMO,'**/SUMMARY.md')
