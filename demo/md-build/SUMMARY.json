@@ -1,0 +1,41 @@
+{
+    "ary": [
+        {
+            "tit": "Introduction",
+            "link": "README.md"
+        },
+        {
+            "tit": "产品介绍",
+            "link": "product.md",
+            "sub": [
+                {
+                    "link": "basic.md",
+                    "tit": "基本介绍"
+                },
+                {
+                    "link": "system.md",
+                    "tit": "系统介绍"
+                }
+            ]
+        },
+        {
+            "tit": "用户管理",
+            "link": "",
+            "sub": [
+                {
+                    "link": "user.md",
+                    "tit": "用户管理"
+                },
+                {
+                    "link": "menu.md",
+                    "tit": "菜单管理"
+                }
+            ]
+        },
+        {
+            "tit": "系统管理",
+            "link": "systems.md"
+        }
+    ],
+    "title": "Summary"
+}
